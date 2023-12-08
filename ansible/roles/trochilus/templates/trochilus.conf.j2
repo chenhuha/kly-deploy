@@ -85,7 +85,7 @@ rbd_store_thin_provisioning = true
 {% endif %}
 {% if enable_local | bool %}
 filesystem_store_chunk_size = 65536
-filesystem_store_datadir = "{% if deploy_edu | bool %}{{ trochilus_vdi_base_path }}/images{% else %}{{ desktop_mount_dir }}/images{% endif %}"
+filesystem_store_datadir = "{% if deploy_edu | bool %}{{ trochilus_vdi_base_path }}images{% else %}{{ desktop_mount_dir }}images{% endif %}"
 {% endif %}
 
 [network_settings]
